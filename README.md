@@ -1,8 +1,31 @@
-# React + Vite
+# Приложение для просмотра информации о фильмах
+## Запуск проекта
+Склонируйте себе репозиторий `git clone https://github.com/TatyaG/films`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Установите все зависимости `npm i`
 
-Currently, two official plugins are available:
+### Запуск приложения в режиме development
+`npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Откройте проект на http://localhost:5173
+
+### Запуск приложения в режиме production
+В данном режиме проект собирается в папку dist.
+
+Выполните команду `npm run dev`
+
+Для запуска приложения необходимо установить веб-сервер serve.
+
+Чтобы установить его, необходимо выполнить команду `npm install --global serve`
+
+Для запуска сервера выполните команду `serve -s dist`
+
+Откройте проект на http://localhost:3000 
+
+## Функционал
+
+- Список всех фильмов;
+- Фильтрация фильмов по жанру, рейтингу и году выпуска;
+- Страница детальной информации о фильме.
+
+Приложение реализовано с использованием API Кинопоиска. Указанный токен рассчитан на не более 200 запросов.
