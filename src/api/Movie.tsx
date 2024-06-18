@@ -1,6 +1,4 @@
 import {z} from 'zod'
-import React from 'react';
-import {Loader} from '../components/Loader'
 import {apiBaseUrl, options} from './Base'
 import {getMoviePoster} from './Posters'
 
@@ -42,13 +40,10 @@ export async function fetchMovies(
 
         if (genre) {          
             url += `&genres.name=${genre}`
-            console.log(url)
         }
 
         if (ratingFrom !== null && ratingTo !== null) {
             url += `&rating.imdb=${ratingFrom}-${ratingTo}`;
-            console.log(url)
-            console.log(ratingFrom, ratingTo)
           }
 
         if (yearFrom && yearTo) {
@@ -56,7 +51,6 @@ export async function fetchMovies(
 
         } else if (yearFrom) {
             url += `&year=${yearFrom}`;
-            console.log(url)
 
           } else if (yearTo) {
             url += `&year=1990-${yearTo}`;
@@ -72,7 +66,6 @@ export async function fetchMovies(
 
         const data = await response.json();
 
-        console.log(data)
 
         const MoviesWithPosters = await Promise.all(
             data.docs.map(async (movie) => {
