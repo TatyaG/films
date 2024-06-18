@@ -36,7 +36,7 @@ export async function fetchMovies(
 ): Promise<FetchMovieListResponse> {
 
 
-    let url = `${apiBaseUrl}v1.4/movie?page=${page}&limit=1`
+    let url = `${apiBaseUrl}v1.4/movie?page=${page}&limit=50`
 
         if (genre) {          
             url += `&genres.name=${genre}`

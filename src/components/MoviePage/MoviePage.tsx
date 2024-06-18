@@ -2,6 +2,7 @@ import { FC } from 'react';
 import React from 'react';
 import './MoviePage.css'
 import {Movie} from '../../api/MoviePage'
+import defImg from '../../assets/def.jpg'
 
 interface MovieProps {
     movie: Movie;
@@ -14,6 +15,10 @@ export const MovieCard: FC<MovieProps> = ({movie}) => {
         <div className='movie'>
             {movie.poster && movie.poster.url && (
                 <img className='movie__poster' srcSet={movie.poster.url} alt="" /> 
+            )}
+
+            {!movie.poster && (
+                <img className='movie__poster' srcSet={defImg} alt="" /> 
             )}
 
             <div>

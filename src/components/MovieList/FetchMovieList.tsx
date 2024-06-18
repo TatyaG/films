@@ -52,7 +52,7 @@ export const FetchMovieListView = () => {
 
    if (data) {
     return (
-        <div>
+        <div className='movies'>
             <div className='filters'>
                 <GenreFilter selectedGenre={selectedGenre} setSelectedGenre={setSelectedGenre} />
                 <YearFilter yearFrom={yearFrom} yearTo={yearTo} setYearFrom={setYearFrom} setYearTo={setYearTo} refetch={refetch}/>

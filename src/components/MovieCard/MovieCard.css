@@ -3,7 +3,6 @@ p, h2 {
 }
 
 .movie-card {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     color: inherit;
@@ -24,7 +23,7 @@ p, h2 {
 .movie-card__poster {
     margin-bottom: 10px;
     max-width: 100%;
-    max-height: 400px;
+    max-height: 350px;
     object-fit: cover;
 }
 

@@ -40,6 +40,13 @@
 .filters__genre {
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 
