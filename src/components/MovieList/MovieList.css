@@ -1,0 +1,63 @@
+.movie-list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.error__btn {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #747bff;
+    color: white;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filters__years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filters__years div,
+.filters__rating,
+.filters__genre {
+    display: flex;
+    gap: 5px;
+}
+
+
+@media (max-width: 1400px) {
+    .movie-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

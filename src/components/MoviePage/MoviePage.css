@@ -1,0 +1,32 @@
+.movie {
+    display: flex;
+    gap: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.movie__poster {
+    max-width: 400px;
+}
+
+.movie__genres {
+    margin: 0;
+}
+
+.movie__descr {
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+span {
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .movie {
+        flex-direction: column;
+    }
+}
+

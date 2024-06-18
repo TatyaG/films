@@ -1,0 +1,35 @@
+p, h2 {
+    margin: 0;
+}
+
+.movie-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+}
+
+.movie-card:hover {
+    color: inherit; 
+}
+
+.movie-card__name:hover {
+    text-decoration: underline;
+}
+
+.movie-card__name {
+    margin-bottom: 10px;
+}
+
+.movie-card__poster {
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .movie-card__poster {
+        max-height: 600px;
+    }
+}
